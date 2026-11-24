@@ -602,7 +602,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds_bucket{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p99",
@@ -615,7 +615,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds_bucket{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p90",
@@ -628,7 +628,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_controller_reconcile_duration_seconds_bucket{gateway=~\"$gateway|\",controller=~\"$controller|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p70",
@@ -727,7 +727,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_translator_translation_duration_seconds{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_translator_translation_duration_seconds_bucket{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p99",
@@ -740,7 +740,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_translator_translation_duration_seconds{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_translator_translation_duration_seconds_bucket{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p90",
@@ -753,7 +753,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_translator_translation_duration_seconds{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_translator_translation_duration_seconds_bucket{name=~\"$gateway|\",translator=~\"$translator|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p70",
@@ -852,7 +852,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.99, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds_bucket{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p99",
@@ -865,7 +865,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.90, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds_bucket{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p90",
@@ -878,7 +878,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
+          "expr": "histogram_quantile(0.70, sum by(le)(rate(kgateway_xds_snapshot_sync_duration_seconds_bucket{gateway=~\"$gateway|\",namespace=~\"$namespace|\"}[5m])))",
           "hide": false,
           "instant": false,
           "legendFormat": "p70",
